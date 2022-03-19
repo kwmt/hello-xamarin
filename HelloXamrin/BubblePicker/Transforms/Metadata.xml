@@ -1,0 +1,17 @@
+﻿<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+    <!--ネイティブ Kotlin ライブラリには 2 つの依存関係があります。これらの依存関係を C# 環境に公開したくないので、これらを完全に無視するように 2 つの変換を定義します。 重要点として、生成されるバイナリからネイティブ メンバーが削除されることはなく、C# クラスのみが生成されなくなります。 Java デコンパイラを使用すると、依存関係を識別できます。 ツールを実行し、前に作成した AAR ファイルを開きます。これにより、すべての依存関係、値、リソース、マニフェスト、およびクラスを反映する Android アーカイブの構造が表示されます。-->
+    <remove-node path="/api/package[starts-with(@name,'org.jbox2d')]" />
+    <remove-node path="/api/package[starts-with(@name,'org.slf4j')]" />
+
+    <!--ネイティブ BubblePicker クラスには getBackgroundColor と setBackgroundColor の 2 つのメソッドがあり、次の変換によって C# BackgroundColor プロパティに変更されます。-->
+    <attr path="/api/package[@name='com.igalata.bubblepicker.rendering']/class[@name='BubblePicker']/method[@name='getBackground' and count(parameter)=0]" name="propertyName">BackgroundColor</attr>
+    <attr path="/api/package[@name='com.igalata.bubblepicker.rendering']/class[@name='BubblePicker']/method[@name='setBackground' and count(parameter)=1 and parameter[1][@type='int']]" name="propertyName">BackgroundColor</attr>
+
+</metadata>

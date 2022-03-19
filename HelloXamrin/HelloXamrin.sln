@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.810.20
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloXamrin", "HelloXamrin\HelloXamrin.csproj", "{FFDD4708-8E3E-4471-BE62-E42692A8EAEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TexCounter", "..\BindingLibrary\com.xamarin.textcounter\TexCounter\TexCounter.csproj", "{1064CB2E-C900-4FDC-BB47-4047A2FF3E1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BubblePicker", "BubblePicker\BubblePicker.csproj", "{B1E7F2F3-2D02-4181-80AE-490B35A2AB14}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FFDD4708-8E3E-4471-BE62-E42692A8EAEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFDD4708-8E3E-4471-BE62-E42692A8EAEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFDD4708-8E3E-4471-BE62-E42692A8EAEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFDD4708-8E3E-4471-BE62-E42692A8EAEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1064CB2E-C900-4FDC-BB47-4047A2FF3E1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1064CB2E-C900-4FDC-BB47-4047A2FF3E1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1064CB2E-C900-4FDC-BB47-4047A2FF3E1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1064CB2E-C900-4FDC-BB47-4047A2FF3E1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1E7F2F3-2D02-4181-80AE-490B35A2AB14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1E7F2F3-2D02-4181-80AE-490B35A2AB14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1E7F2F3-2D02-4181-80AE-490B35A2AB14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1E7F2F3-2D02-4181-80AE-490B35A2AB14}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0E18F299-68EC-4A09-AD10-4AD6E1B83360}
+	EndGlobalSection
+EndGlobal
